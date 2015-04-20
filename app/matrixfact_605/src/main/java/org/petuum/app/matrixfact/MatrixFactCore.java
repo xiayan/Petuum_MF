@@ -144,7 +144,7 @@ public class MatrixFactCore {
         }
 
         totalLoss *= lambda;
-        // totalLoss += sqLoss;
+        totalLoss += sqLoss;
 
         lossRecorder.incLoss(ithEval, "SquareLoss", sqLoss);
         lossRecorder.incLoss(ithEval, "FullLoss", totalLoss);
